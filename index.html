@@ -11,13 +11,28 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="./omikuji.js"></script>
+  
   <title>おみくじ</title>
 </head>
 
 <body>
   <h1>おみくじ</h1>
-  <a href = "javascript:randomLink();" class="btn-primary">おみくじを引く</a>
-</body>
 
+  <button id="modalOpen" class="button">Click Me</button>
+
+  <div id="easyModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>運勢</h1>
+              <h1 id="omikuji-result">#</h1>
+              <span class="modalClose">×</span>
+            </div>
+            <div class="modal-body">
+              <h2>ラッキーアイテム</h2>
+              <h2 id="item">#</h2>
+            </div>
+           </div>
+  </div>
+  <script src="./omikuji.js"></script>
+</body>
 </html>
